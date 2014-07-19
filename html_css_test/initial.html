@@ -10,19 +10,15 @@
 	<title>Initial scratchpad</title>
 </head>
 <body>
-<h1>Scratchpad for chapter 6. Oh God, it's time for taaaaaables.</h1>
+<h1>Scratchpad for chapter 7. Let's set up some forms.</h1>
 <hr/>
 <h2>Poems</h2>   
 <a href="poems/walrus_and_carpenter.html" target="_blank">The Walrus and the Carpenter</a>
 <ul> 
 	<li>
 		<ul>
-			<li><a href="poems/walrus_and_carpenter.html#verse_1" target="_blank">Verse 1</a></li>
-			<li><a href="poems/walrus_and_carpenter.html#verse_2" target="_blank">Verse 2</a></li>
-			<li><a href="poems/walrus_and_carpenter.html#verse_3" target="_blank">Verse 3</a></li>       
-			<li><a href="poems/walrus_and_carpenter.html#verse_4" target="_blank">Verse 4</a></li>      
-			<li><a href="poems/walrus_and_carpenter.html#verse_5" target="_blank">Verse 5</a></li>  
-			<li><a href="poems/walrus_and_carpenter.html#verse_6" target="_blank">Verse 6</a></li>       
+			<li><a href="poems/walrus_and_carpenter.html#verse_1" target="_blank">Verse 1</a> <a href="poems/walrus_and_carpenter.html#verse_2" target="_blank">Verse 2</a> <a href="poems/walrus_and_carpenter.html#verse_3" target="_blank">Verse 3</a> 
+			<li><a href="poems/walrus_and_carpenter.html#verse_4" target="_blank">Verse 4</a> <a href="poems/walrus_and_carpenter.html#verse_5" target="_blank">Verse 5</a> <a href="poems/walrus_and_carpenter.html#verse_6" target="_blank">Verse 6</a></li>       
 			<li><a href="poems/walrus_and_carpenter.html#verse_7" target="_blank">Verse 7</a></li>    
 		</ul>      
 	</li>
@@ -52,6 +48,34 @@
 			<td>Maria L Kirk & John Tenniel</td>  
 		</tr>
 	</tbody>
-</table>
+</table>  
+<hr/>  
+<form id="bogusform">    
+	<fieldset>    
+		<legend>A fieldset!</legend>
+	     Well, here's where all our form controls will go. Let's see if the HTML5 items show up. <br/>
+		<p>Simple text input, validated via HTML5: <input type="text" name="username" required="required" size="15" maxlength="30" /></p>    
+		<p>Password-style input: <input type="password" name="password" size="15" maxlength="30" /> 
+			<input type="submit" value="Submit" /></p>     
+		<p><label for="searchbox">Search here :</label>
+			<input type="search" placeholder="Enter keyword" name="searchbox" />
+		</p>
+		<p>A chunk of textarea: <textarea name="bigtext" cols="20" rows="3">Some bogus data here</textarea></p>
+		<p>Here are some radio buttons
+			<br/>  
+			<label>First Character Set : </label>
+			<input id="Alice" type="radio" name="character" checked="checked" /><Alice><label for="Alice">Alice</label>
+			<input id="The March Hare" type="radio" name="character" /><label for="The March Hare">The March Hare</label>
+			<input id="The Mad Hatter" type="radio" name="character" /><label for="The Mad Hatter">The Mad Hatter</label>
+			<input id="Dormouse" type="radio" name="character" /><label for="Dormouse">Dormouse</label>   
+		</p>  
+		<p>Here are some checkboxes
+			<br/>
+			<input type="checkbox" name="character" value="The Queen of Hearts" checked="checked" />The Queen of Hearts
+			<input type="checkbox" name="character" value="The Walrus" checked="checked" />The Walrus
+			<input type="checkbox" name="character" value="The Carpenter" checked="checked" />The Carpenter  
+		</p>    
+	</fieldset>    
+</form>
 </body>
 </html>
