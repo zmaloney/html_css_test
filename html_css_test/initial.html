@@ -1,5 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd"> --> 
 
 <html lang="en">
 <head>
@@ -10,10 +11,21 @@
 	<title>Initial scratchpad</title>
 </head>
 <body>
-<h1>Scratchpad for chapter 7. Let's set up some forms.</h1>
+<h1>Scratchpad for chapter 8 -- extra markup greebles and bits.</h1>
 <hr/>
-<h2>Poems</h2>   
-<a href="poems/walrus_and_carpenter.html" target="_blank">The Walrus and the Carpenter</a>
+<h2>Poems</h2>          
+<div id="walruspoem" class="poemgroup">
+    This div element should be set off from everything else. It is id "walruspoem" and class "poemgroup". 
+	<a href="poems/walrus_and_carpenter.html" target="_blank">The Walrus and the Carpenter</a>      
+</div>    
+<div>
+	Here is another div, which doesn't have any ID or style.
+</div>    
+<iframe width="450"
+	height="350"
+	src="http://maps.google.com/maps?q=tate+modern+london&amp;output=embed"
+	seamless="seamless">Here is some text which is only visible if the browser doesn't support iframe.
+</iframe>
 <ul> 
 	<li>
 		<ul>
