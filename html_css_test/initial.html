@@ -8,26 +8,33 @@
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Zacharie Maloney">
 	<!-- Date: 2014-07-16 -->
-	<title>Initial scratchpad</title>
+	<title>Initial scratchpad</title>  
+	<link href="styles/ch10.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<h1>Scratchpad for chapter 8 -- extra markup greebles and bits.</h1>
+<h1>All right! It's time for CSS!</h1>
 <hr/>
 <h2>Poems</h2>          
 <div id="walruspoem" class="poemgroup">
-    This div element should be set off from everything else. It is id "walruspoem" and class "poemgroup". 
+    This div element should be set off from everything else. It is id "walruspoem" and class "poemgroup"; since it's a div, this allows the more-specific div.poemgroup CSS rule to apply to it. 
 	<a href="poems/walrus_and_carpenter.html" target="_blank">The Walrus and the Carpenter</a>      
 </div>    
 <div>
 	Here is another div, which doesn't have any ID or style.
 </div>    
-<iframe width="450"
-	height="350"
-	src="http://maps.google.com/maps?q=tate+modern+london&amp;output=embed"
-	seamless="seamless">Here is some text which is only visible if the browser doesn't support iframe.
-</iframe>
-<ul> 
-	<li>
+<p>
+For people who can't see the map : this is a map showing the location of the Tate Modern via Google Maps.      
+</p>
+<div>    
+	<iframe width="450"
+		height="350"
+		src="http://maps.google.com/maps?q=tate+modern+london&amp;output=embed"
+		seamless="seamless">Here is some text which is only visible if the browser doesn't support iframe.
+	</iframe>  
+</div>
+<ul class="poemgroup">  
+	<li>The ul containing this li has class "poemgroup", but isn't a div, so it only gets .poemgroup styling.</li>
+	<li>  
 		<ul>
 			<li><a href="poems/walrus_and_carpenter.html#verse_1" target="_blank">Verse 1</a> <a href="poems/walrus_and_carpenter.html#verse_2" target="_blank">Verse 2</a> <a href="poems/walrus_and_carpenter.html#verse_3" target="_blank">Verse 3</a> 
 			<li><a href="poems/walrus_and_carpenter.html#verse_4" target="_blank">Verse 4</a> <a href="poems/walrus_and_carpenter.html#verse_5" target="_blank">Verse 5</a> <a href="poems/walrus_and_carpenter.html#verse_6" target="_blank">Verse 6</a></li>       
