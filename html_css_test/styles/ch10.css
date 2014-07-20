@@ -1,0 +1,63 @@
+/* some definitions based on the 12-pixel scale */
+h1 { 
+	font-size : 1.5em;      
+	/* note that we could use font-weight : normal as an "off switch" for the usual bold style used here. */
+	text-transform : uppercase;    
+	letter-spacing : 0.1em; /* added on top of normal spacing */
+	word-spacing : 0.5em; /* added on top of normal spacing */
+}      
+
+h2 { 
+	font-size : 1.3em; 
+}
+
+h3 { 
+	font-size : 0.875em; 
+}
+
+body { 
+	font-size : 100%;       
+	line-height : 1.4em;
+} 
+
+p { 
+	font-size : 1em; 
+} 
+
+p:first-letter { 
+	font-size : 1.2em; 
+}
+     
+/* stuff that's custom for the page */ 
+h1 {    
+	color: red; 
+}         
+    
+.poemgroup {   
+	border: 1px solid #665544; 
+	padding: 10px;     
+}
+
+div.poemgroup {   
+	background-color: #000000;  
+	color: #D3D3D3;           
+	font-family: Arial, Verdana, sans-serif;
+}    
+
+div.poemgroup a {            
+	font-family: serif;
+}   
+      
+/* any ul child of a .poemgroup-class tag will have this style */
+.poemgroup ul {    
+	font-size: .8em;
+}    
+     
+/* for text we want to hide but still want to have available to screen readers, etc. : 
+indent it all the way off the page */     
+/* interestingly, this seems only to apply correctly to block elements, not inline elements */
+.hidetext {     
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}                                      
