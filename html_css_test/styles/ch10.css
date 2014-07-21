@@ -24,8 +24,8 @@ p {
 	font-size : 1em; 
 } 
 
-p:first-letter { 
-	font-size : 1.2em; 
+p[firstletter="1.5"]:first-letter { 
+	font-size : 1.5em; 
 }
      
 /* stuff that's custom for the page */ 
@@ -60,4 +60,15 @@ indent it all the way off the page */
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-}                                      
+}         
+
+a:link { 
+	color: deeppink; 
+	text-decoration: none; }                             
+	
+a:visited { 
+	color: black; }
+	
+a:hover {  
+	color: deeppink;
+	text-decoration: underline; }
