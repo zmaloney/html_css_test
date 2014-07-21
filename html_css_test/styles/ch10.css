@@ -71,4 +71,13 @@ a:visited {
 	
 a:hover {  
 	color: deeppink;
-	text-decoration: underline; }
+	text-decoration: underline; }     
+ 
+fieldset.descriptive { 
+	min-width: 400px; 
+	max-width: 650px; 
+	text-align: left; 
+	margin: 0px;    
+	border: 2px solid #000000; 
+	border-radius : 10px;   
+}
