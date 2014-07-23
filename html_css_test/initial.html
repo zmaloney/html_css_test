@@ -42,7 +42,7 @@ For people who can't see the map : this is a map showing the location of the Tat
 		</ul>      
 	</li>
 </ul>  
-<table>    
+<table class="editionstable">    
 	<thead>
 		<tr>    
 			<th></th>
@@ -65,6 +65,11 @@ For people who can't see the map : this is a map showing the location of the Tat
 			<th scope="row">1904</th>
 			<td>Stokes USA</td>
 			<td>Maria L Kirk & John Tenniel</td>  
+		</tr>   
+		<tr>  
+			<th scope="row">1908</th>
+			<td>No entries for this date</td>
+			<td></td>  
 		</tr>
 	</tbody>
 </table>  
@@ -73,16 +78,29 @@ For people who can't see the map : this is a map showing the location of the Tat
 	<fieldset class="descriptive">    
 		<legend>Fieldset of class "descriptive"</legend>
 	     Well, here's where all our form controls will go. Let's see if the HTML5 items show up. Also, let's see what happens when we exceed the maximum width with the amount of text in the box.<br/>
-		<p>Simple text input, validated via HTML5: <input type="text" name="username" required="required" size="15" maxlength="30" /></p>    
-		<p firstletter="1.5">Password-style input: <input type="password" name="password" size="15" maxlength="30" /> 
-			<input type="submit" value="Submit" /></p>     
-		<p><label for="searchbox">Search here :</label>
+		<div>
+			<label class="title">Simple text input, validated via HTML5:</label> 
+			<input type="text" name="username" required="required" size="15" maxlength="30" />
+		</div>
+		<div>    
+			<label class="title">Password-style input:</label>
+			<input type="password" name="password" size="15" maxlength="30" />
+		</div>   
+		<div>  
+			<label class="title" for="searchbox">Search here :</label>
 			<input type="search" placeholder="Enter keyword" name="searchbox" />
-		</p>
-		<p>A chunk of textarea: <textarea name="bigtext" cols="20" rows="3">Some bogus data here</textarea></p>
+		</div>    
+		<div>  
+			<label class="title">A chunk of textarea:</label> 
+			<textarea name="bigtext" cols="20" rows="3">Some bogus data here</textarea> 
+		</div>    
+		<div>  
+			<input type="submit" value="Submit" />  
+	    </div>   
+						
 		<p>Here are some radio buttons
 			<br/>  
-			<label>First Character Set : </label>
+			<span>First Character Set : </span>
 			<input id="Alice" type="radio" name="character" checked="checked" /><Alice><label for="Alice">Alice</label>
 			<input id="The March Hare" type="radio" name="character" /><label for="The March Hare">The March Hare</label>
 			<input id="The Mad Hatter" type="radio" name="character" /><label for="The Mad Hatter">The Mad Hatter</label>
