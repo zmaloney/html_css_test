@@ -1,0 +1,66 @@
+h2 { 
+	background-color: #efefef; 
+	padding: 10px;
+	}    
+
+.position-static { 
+	}
+
+.position-relative { 
+	position: relative;  
+	top: 100px; 
+	left: 100px;
+	}   
+	
+.position-absolute { 
+	position: absolute;   
+	top: 0px; 
+	left: 500px; 
+	width: 250px; 
+	}     
+	
+.position-fixed { 
+	position: fixed;   
+	top: 0px; 
+	left: 0px; 
+	width: 100%;   
+	margin: 0px; 
+	}   
+	
+.float-right { 
+	float: right; 
+	width: 250px; 
+	margin: 0px 0px 10px 10px; 
+	padding: 10px; 
+	border-top: 1px solid #665544; 
+	border-bottom: 1px solid #665544;
+	}  
+	
+.float-group { 
+	width: 250px; 
+	float: left; 
+	margin: 5px; 
+	padding: 5px; 
+	background-color: #efefef;
+	}   
+
+.clear { 
+	clear: both;  
+	}     
+	
+.borderme { 
+	border: 1px solid #665544;
+	/* without the following 2 rules, the div is treated as 0px tall, collapsing the border into a line : */
+	overflow: auto; 
+	}   
+
+.leftcolumn { 
+	float: left; 
+	width: 620px; 
+	margin: 10px; 
+	} 
+	
+.rightcolumn {      
+	margin-top: 10px;  
+	margin-left: 620px; 
+	}
